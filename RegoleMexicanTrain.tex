@@ -1,0 +1,190 @@
+\documentclass[sigconf,10pt]{acmart}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+
+%\usepackage[noend]{algpseudocode}
+%\usepackage{ucs}
+%\usepackage[utf8]{inputenc}
+%\usepackage{babel}
+%\usepackage{fontenc}
+%\usepackage{graphicx}
+%\usepackage{booktabs}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\settopmatter{printacmref=false, printccs=false, printfolios =false}
+\setcopyright{none} 
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+\acmConference[Mexican Train Dominoes]{ }{Dicembre $25$, $2020$}{ }
+
+\begin{document}
+
+\title{Mexican Train Dominoes}
+
+\author{a cura di \textit{Andrea Graziani}}
+\affiliation{
+  \institution{Versione \texttt{0.9a} (ultima revisione $25$ dicembre $2020$)}
+}
+
+\renewcommand{\shortauthors}{}
+\maketitle
+
+\section{Preparazione}
+
+Per incominciare, tutte le tessere devono essere capovolte e mescolate in cerchio con il palmo delle mano - \textit{in modo tale da produrre quel piacevole suono noto da secoli}.                                                                                                                                                       
+
+Ogni giocatore deve prelevare un certo numero di tessere in base al numero di giocatori secondo le seguenti regole:\\
+
+\begin{center}
+\begin{tabular}{l|l}
+\toprule
+Numero Giocatori & Numero Tessere \\
+\midrule
+$2\sim4$ & $15$ \\
+$5\sim6$ & $12$ \\
+$7\sim8$ & $10$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Assicurarsi di mantenere \textit{celate} le tessere della propria mano agli altri giocatori. Tutte le tessere rimanenti faranno parte del cosiddetto \textit{Cimitero}. 
+
+Successivamente, procedere come segue:
+
+\begin{enumerate}
+\item Posizionare la \textit{stazione} al centro del tavolo.
+
+\item Assegnare uno slot della stazione ad ogni giocatore. Lo slot assegnato costituisce il punto di partenza del proprio treno. Assicurarsi di assegnare uno slot al cosiddetto \textit{Treno Messicano} posizionando l'apposito segnalino per riconoscerlo.
+
+\begin{itemize}
+\item A causa del limitato numero di slot utilizzabili nella stazione, qualora ci fossero $8$ giocatori, lo slot riservato al Treno Messicano non sarà disponibile. In tal caso, occorre far partire il Treno Messicano fuori dalla stazione
+\end{itemize}
+
+\item Il giocatore avente il \textit{Doppio}\footnote{Tessera con entrambe le estremità uguali} più alto deve posizionarlo al centro della stazione.
+
+\begin{itemize}
+\item Qualora nessun giocatore abbia un Doppio nella propria mano, tutti i giocatori devono estrarre dal cimitero una tessera. L'estrazione deve continuare finché non viene prelevato un Doppio che verrà posizionato al centro della stazione.
+\end{itemize}
+
+\end{enumerate}
+
+\subsubsection{Varianti}
+
+\begin{enumerate}
+\item E' possibile iniziare una partita posizionando direttamente un Doppio $12$ durante il primo round. Nei round successivi deve essere utilizzato il successivo Doppio inferiore fino a quando non vengono utilizzati tutti i Doppi. Il Doppio spazio vuoto è il round finale. 
+\end{enumerate}
+
+\section{I treni}
+
+Durante la partita, ogni treno può trovarsi in uno dei seguenti stati:
+
+\begin{description}
+\item[Pubblico] Tutti i giocatori possono posizionarvi tessere. Tutti i treni iniziano il gioco come pubblici.
+\item[Privato] Accessibile solo al giocatore di appartenenza.
+\end{description}
+
+\subsection{Il \textit{Treno Messicano}}
+
+Il \textit{Treno Messicano} è un treno aggiuntivo su cui chiunque può posizionare una tessera durante il proprio turno. 
+
+Analogamente agli altri treni, il Treno Messicano deve essere avviato posizionando una tessera compatibile con quella presente sulla stazione centrale. 
+
+\begin{itemize}
+\item Il Treno Messicano è sempre pubblico.
+
+\item Il Treno Messicano non può terminare con un Doppio.
+\end{itemize}
+
+\section{Il \textit{Primo Turno}}
+
+Il giocatore che si trova alla \textbf{sinistra} del giocatore che ha posizionato il \textbf{doppio più alto} incomincia la partita. I turni di gioco seguono in \textbf{senso orario}.
+
+Quando si gioca al \textit{Mexican Train Dominoes}, il Primo Turno di ogni giocatore è \textit{diverso} da tutti quelli successivi e richiede particolare attenzione per sfruttarne i vantaggi.
+
+Ogni giocatore incomincia il proprio treno posizionando una tessera dalla propria mano in uno degli slot disponibili sulla stazione centrale. Una delle estremità della suddetta tessera deve coincidere con quella presente sulla stazione centrale. 
+
+Quindi, il giocatore può continuare ad estendere il proprio treno aggiungendo nuove tessere purché abbiano un'estremità corrispondente a quella precedentemente posizionata.
+
+\begin{itemize}
+\item Se un giocatore non è in grado di posizionare la prima tessera durante il Primo Turno, egli ha diritto a prelevarne una dal Cimitero; se è in grado di posizionarla, il giocatore ha diritto a continuare il proprio Primo Turno come di consueto, altrimenti il suo turno termina.
+
+\item L'opportunità di posizionare più tessere è \textit{esclusiva} del Primo Turno.
+
+\item Qualora un giocatore riuscisse a posizionare tutte le tessere della propria mano durante il Primo Turno, tutti gli altri giocatori hanno diritto a giocare il Primo Turno. Il gioco può terminare solo quando tutti i giocatori avranno giocato il Primo Turno.
+
+\end{itemize}
+
+\subsubsection{Varianti}
+
+\begin{enumerate}
+\item Si può giocare anche senza seguire le regole del Primo Turno. In tal caso, devono essere rispettate le regole previste nei turni successivi, pertanto ai giocatori è consentito soltanto posizionare una sola tessera sia durante il Primo Turno sia durante quelli successivi.
+\end{enumerate}
+
+\section{Turni successivi}
+
+In tutti i turni successivi, ogni giocatore può posare solo una tessera della propria mano in uno dei treni disponibili. 
+
+I turni successivi al primo possono svolgersi come segue:
+
+\begin{enumerate}
+\item Se possibile, il giocatore posiziona una tessera presso uno dei treni disponibili, terminando così il proprio turno.
+
+\item Altrimenti, il giocatore preleva una tessera dal Cimitero. Se quest'ultima può essere posizionata in uno dei \textit{treni} disponibili, il suddetto giocatore termina il proprio turno.
+
+\item Se il giocatore non riesce ancora a giocare la tessera prelevata, quest'ultimo posiziona il l'apposito segnalino sul treno, rendendolo pubblico e quindi disponibile a tutti gli altri giocatori.
+\end{enumerate}
+
+Inoltre, valgono le seguenti regole:
+
+\begin{itemize}
+\item Se un giocatore posiziona una tessera sul proprio treno, quest'ultimo diventa privato e quindi non più disponibile per gli altri giocatori. Se il treno in questione era precedentemente pubblico, assicurarsi di rimuovere l'apposito segnalino dal treno.
+
+\item Se un giocatore posiziona un Doppio in uno dei treni disponibili, il giocatore in questione ha diritto a posizionare la cosiddetta \textit{finitura}, \textit{soddisfazione del Doppio} o \textit{copertura del Doppio}, aggiungendo cioè un ulteriore tessera corrispondente.
+
+\item Se un giocatore non è in grado di posizionare alcuna tessera ed il Cimitero è vuoto, il suo turno termina. Il giocatore deve assicurasi di posizionare il segnalino sul proprio treno rendendolo pubblico. 
+
+\end{itemize}
+
+\section{Condizioni di vittoria}
+
+Lo scopo del gioco è divenire il primo giocatore privo di \textbf{tutte} le tessere presenti nella propria mano; non appena si riesce nell'intento, anche se l'ultima tessera è un doppio, il gioco termina.
+
+Il giocatore vincente segna \textbf{zero} punti mentre tutti gli altri giocatori segnano un punteggio pari al numero dei pallini presenti su tutte le tessere ancora in mano.
+
+\begin{itemize}
+\item Al termine di tutti i round della partita, il giocatore con il minor numero di punti viene proclamato vincitore. 
+
+In caso di pareggio, la persona con il maggior numero di round da $0$ punti è il vincitore (se questo è ancora un pareggio, la persona con il totale del round più basso diverso da $0$ è il vincitore).
+\end{itemize}
+
+\section{Il gioco dei doppi}
+
+Riguardante le modalità di gioco delle tessere Doppie, possono essere utilizzate diverse regole e varianti:
+
+La regola di base prevede che, quando viene posizionata una tessera Doppia alla coda di ogni treno, è obbligatoria la cosiddetta \textit{finitura}, in cui si richiede di posizionare la tessera corrispondente al Doppio.
+ 
+Tutti gli altri treni disponibili devono essere ignorati. Occorre rispondere al Doppio anche se quest'ultimo si trova su un treno privato. Se un giocatore non riesce a giocare contro un Doppio anche dopo aver estratto una tessera dal Cimitero, si è obbligati a posizionare il proprio segnalino sulla coda del proprio treno, rendendolo pubblico, passando infine il turno al giocatore successivo.
+
+Qualora non fosse possibile rispondere ad un Doppio posizionato alla coda di un treno, quest'ultimo dovrà essere ignorato (si può persino decidere di interrompere la partita e contare i punteggi). Per indicare che quel treno è permanentemente bloccato, si deve posizionare la Doppia sopra la tessera precedente.
+
+\subsubsection{Varianti}
+
+\begin{enumerate}
+\item La regola di base può non essere applicata durante il Primo Turno. Il Doppio dovrà essere soddisfatto nei turni successivi.
+
+\item Quando un giocatore gioca un Doppio, sebbene abbia diritto a posizionare un'ulteriore tessera presso uno dei treni disponibili, egli non ha diritto a giocare contro il Doppio posizionato; in altre parole non può procedere alla finitura del Doppio.
+
+Seguendo tale variante, un giocatore può posizionare più di un Doppio di fila, contro le quali gli altri giocatori dovranno rispondere prima di continuare la partita come di consueto.
+
+\begin{itemize}
+\item Esiste una variante della regola precedente che impone che la risposta ai Doppi debba avvenire nell'ordine inverso in accordo alla quale sono state posizionate.
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}
+\endinput
